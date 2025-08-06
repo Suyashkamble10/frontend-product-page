@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Scents - Premium Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    
+        <li class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+    </ul>
+</nav>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <main class="products-page">
+        <!-- Hero Section -->
+        <section class="products-hero">
+            <h1><strong>Luxury Scents</strong></h1>
+            <p><strong>Discover Your Perfect Scent</strong></p>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/elegant,rose,perfume,bottle,pink" alt="Rose Garden Perfume">
+                <h3>Rose Garden Dreams</h3>
+                <p>A romantic blend of Bulgarian roses and jasmine</p>
+                <div class="scent-notes">
+                    <span>Top Note: Fresh Rose</span>
+                    <span>Heart: Jasmine</span>
+                    <span>Base: Vanilla</span>
+                </div>
+                <span class="price">3999/-</span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button>
+<!-- Do this for each product button -->
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/ocean,breeze,perfume,bottle,blue" alt="Ocean Breeze Perfume">
+                <h3>Ocean Whispers</h3>
+                <p>Fresh aquatic scent with marine notes</p>
+                <div class="scent-notes">
+                    <span>Top Note: Sea Salt</span>
+                    <span>Heart: Marine Accord</span>
+                    <span>Base: White Musk</span>
+                </div>
+                <span class="price">5999/- </span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button>
+<!-- Do this for each product button -->
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/strawberry,sweet,perfume,bottle,red" alt="Strawberry Fields Perfume">
+                <h3>Strawberry Fields</h3>
+                <p>Sweet and fruity with fresh strawberry essence</p>
+                <div class="scent-notes">
+                    <span>Top Note: Wild Strawberry</span>
+                    <span>Heart: Red Berries</span>
+                    <span>Base: Sweet Cream</span>
+                </div>
+                <span class="price">4999/- </span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button>
+<!-- Do this for each product button -->
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/vanilla,caramel,perfume,bottle,golden" alt="Sweet Gourmand Perfume">
+                <h3>Sweet Indulgence</h3>
+                <p>Rich vanilla and caramel blend</p>
+                <div class="scent-notes">
+                    <span>Top Note: Caramel</span>
+                    <span>Heart: Madagascar Vanilla</span>
+                    <span>Base: Tonka Bean</span>
+                </div>
+                <span class="price">5999/- </span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button>
+<!-- Do this for each product button -->
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/citrus,orange,perfume,bottle,bright" alt="Citrus Burst Perfume">
+                <h3>Citrus Burst</h3>
+                <p>Energizing blend of fresh citrus fruits</p>
+                <div class="scent-notes">
+                    <span>Top Note: Orange Zest</span>
+                    <span>Heart: Mandarin</span>
+                    <span>Base: Bergamot</span>
+                </div>
+                <span class="price">3999/- </span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button>
+<!-- Do this for each product button -->
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="https://image.pollinations.ai/prompt/chocolate,coffee,perfume,bottle,brown" alt="Café Mocha Perfume">
+                <h3>Café Mocha</h3>
+                <p>Rich coffee and chocolate essence</p>
+                <div class="scent-notes">
+                    <span>Top Note: Coffee Bean</span>
+                    <span>Heart: Dark Chocolate</span>
+                    <span>Base: Warm Milk</span>
+                </div>
+                <span class="price">5999/- </span>
+                <button class="btn" onclick="addToCart('Rose Garden Dreams', '3999')">Add to Cart</button
+
+        
+
+      <!-- Footer -->
+    <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info@scentedluxury.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </div>
+            
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Luxury Scents. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total">₹0</span></h3>
+            </div>
+            <button class="btn checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            <button class="btn close-btn" onclick="closeCart()">Continue Shopping</button>
+        </div>
+    </div>
+    
+    <script>
+    let cart = [];
+    
+    function addToCart(name, price) {
+        cart.push({name, price});
+        updateCart();
+        showCart();
+    }
+    
+    function updateCart() {
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        let total = 0;
+        
+        cartItems.innerHTML = cart.map(item => {
+            total += parseInt(item.price);
+            return `<div class="cart-item">
+                <span>${item.name}</span>
+                <span>₹${item.price}</span>
+            </div>`;
+        }).join('');
+        
+        cartTotal.textContent = `₹${total}`;
+    }
+    
+    function showCart() {
+        document.getElementById('cart-modal').style.display = 'block';
+    }
+    
+    function closeCart() {
+        document.getElementById('cart-modal').style.display = 'none';
+    }
+
+        </script>
+</body>
+</html>
